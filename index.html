@@ -13,9 +13,108 @@
     />
     <!-- Global.Css -->
     <link rel="stylesheet" href="./assets/style/global.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/img/icon/rps.png"
+    />
     <title>RPS-GAME</title>
   </head>
-  <body>
+  <body class="body" style="background-color: gray">
+    <header class="header">
+      <div class="container my-2">
+        <div class="jumbotron py-5">
+          <div
+            class="container d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="text-success text-center font-weight-bold">
+              Rock Paper Scissors
+            </h1>
+            <p class="h4 text-center text-info font-weight-bold">
+              Please select one of the 'R S P' (press) buttons to play
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="jumbotron">
+              <div class="container d-flex flex-column align-items-center">
+                <strong class="d-none"></strong>
+                <p class="player-info h1 text-danger font-weight-bold mb-3">
+                  Player 1 (ME)
+                </p>
+                <p class="h3 text-primary font-weight-bold">Point: 0</p>
+              </div>
+            </div>
+
+            <div class="card d-block" style="width: 100%">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="./assets/img/r.png"
+                  class="card-img-top"
+                  alt="Rock"
+                  style="width: auto; height: 200px; transform: rotateY(180deg)"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-danger text-center h1">Rock</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 d-flex align-items-center justify-content-center display-1 font-weight-bolder text-warning"
+          >
+            VS
+          </div>
+          <div class="col-lg-5">
+            <div class="jumbotron">
+              <div class="container d-flex flex-column align-items-center">
+                <strong class="d-none"></strong>
+                <p
+                  class="player-info h1 text-danger text-center font-weight-bold mb-3"
+                >
+                  Player 2 (COM)
+                </p>
+                <p class="h3 text-primary font-weight-bold">Point: 0</p>
+              </div>
+            </div>
+
+            <div class="card d-block" style="width: 100%">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="./assets/img/s.png"
+                  class="card-img-top"
+                  alt="Rock"
+                  style="width: auto; height: 200px; transform: rotateY(180deg)"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-text text-danger text-center h1">Scissors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="jumbotron py-5 mb-2" style="margin-top: 32px">
+          <div class="container">
+            <h2 class="text-success font-weight-bold text-center mb-4">
+              The result of the last game
+            </h2>
+            <div class="d-flex justify-content-between">
+              <p class="h2 text-info font-weight-bold">ME : 0</p>
+              <p class="h2 text-info font-weight-bold">COM : 0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Index.js -->
     <script src="./index.js"></script>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
